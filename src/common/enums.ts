@@ -1,0 +1,93 @@
+export enum Role {
+  ENGINEER = 'ENGINEER',
+  SUPERVISOR = 'SUPERVISOR',
+  ADMIN = 'ADMIN',
+  CUSTOMER = 'CUSTOMER',
+  SALES = 'SALES',
+  MANAGER = 'MANAGER',
+  DISPATCHER = 'DISPATCHER',
+  FINANCE = 'FINANCE',
+}
+
+export enum PartStatus {
+  AVAILABLE = 'AVAILABLE',
+  PENDING_COLLECTION = 'PENDING_COLLECTION',
+  CLAIMED = 'CLAIMED',
+  COLLECTED = 'COLLECTED',
+  UNAVAILABLE = 'UNAVAILABLE',
+}
+
+export enum DeviceStatus {
+  APPROVED_FOR_DISPOSAL = 'APPROVED_FOR_DISPOSAL',
+  REMOVED = 'REMOVED',
+}
+
+export enum DeviceCondition {
+  GOOD = 'GOOD',
+  FAIR = 'FAIR',
+  POOR = 'POOR',
+}
+
+export enum TonerColor {
+  BLACK = 'black',
+  CYAN = 'cyan',
+  MAGENTA = 'magenta',
+  YELLOW = 'yellow',
+}
+
+export enum NotificationType {
+  PART_AVAILABLE = 'PART_AVAILABLE',
+  PART_REMOVED = 'PART_REMOVED',
+  PART_CLAIMED = 'PART_CLAIMED',
+  PART_COLLECTED = 'PART_COLLECTED',
+  REQUEST_CREATED = 'REQUEST_CREATED',
+  REQUEST_ASSIGNED = 'REQUEST_ASSIGNED',
+  REQUEST_STATUS_UPDATED = 'REQUEST_STATUS_UPDATED',
+  QUOTE_ISSUED = 'QUOTE_ISSUED',
+  MESSAGE_RECEIVED = 'MESSAGE_RECEIVED',
+  GENERAL = 'GENERAL',
+}
+
+export enum PartTransactionType {
+  CLAIM = 'CLAIM',
+  REQUEST = 'REQUEST',
+  RETURN = 'RETURN',
+  COLLECT = 'COLLECT',
+  ADD = 'ADD',
+}
+
+export enum ServiceRequestType {
+  TONER = 'TONER',
+  HARDWARE = 'HARDWARE',
+  IT_SUPPORT = 'IT_SUPPORT',
+  SOFTWARE = 'SOFTWARE',
+  BILLING_QUERY = 'BILLING_QUERY',
+}
+
+export enum ServiceRequestStatus {
+  NEW = 'NEW',
+  ACKNOWLEDGED = 'ACKNOWLEDGED',
+  PENDING = 'PENDING',
+  ASSIGNED = 'ASSIGNED',
+  EN_ROUTE = 'EN_ROUTE',
+  ON_SITE = 'ON_SITE',
+  WAITING_PARTS = 'WAITING_PARTS',
+  WAITING_CUSTOMER = 'WAITING_CUSTOMER',
+  COMPLETED = 'COMPLETED',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum ServiceRequestPriority {
+  LOW = 'LOW',
+  MEDIUM = 'MEDIUM',
+  HIGH = 'HIGH',
+  URGENT = 'URGENT',
+}
+
+export enum QuoteStatus {
+  DRAFT = 'DRAFT',
+  SENT = 'SENT',
+  ACCEPTED = 'ACCEPTED',
+  REJECTED = 'REJECTED',
+  EXPIRED = 'EXPIRED',
+}
